@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100%; 
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: black;
+  color: grey;
+  padding: 1px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.banner {
+  flex: 1;
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: grey;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 60px;
+}
+
+.sidebar .profile {
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar .profile img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.sidebar .profile .name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar .profile .date {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  background-color: grey;
+  border: solid white;
+}
+.sidebar .menu li {
+  padding: 10px 20px;
+}
+
+.sidebar .menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.sidebar .menu .submenu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #495057;
+}
+
+.sidebar .menu .submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+.sidebar .menu li:hover .submenu {
+  display: block; /* Tampilan submenu saat hover */
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+.dashboard .card {
+  display: inline-block;
+  width: 23%;
+  margin: 1%;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.dashboard .card.blue {
+  background-color: #5bc0de;
+}
+
+.dashboard .card.red {
+  background-color: #d9534f;
+}
+
+.dashboard .card.green {
+  background-color: #5cb85c;
+}
+
+.dashboard .card.orange {
+  background-color: #f0ad4e;
+}
+
+.dashboard .card .number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dashboard .card .label {
+  font-size: 14px;
+}
+
+.dashboard .card .link {
+  margin-top: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard .card .link:hover {
+  text-decoration: underline;
+}
+
+.dashboard .section {
+  margin-top: 20px;
+}
+
+.dashboard .section .box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.dashboard .section .box.orange {
+  border-left: 5px solid #f0ad4e;
+}
+
+.dashboard .section .box .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box {
+  border-left: 5px solid blue;
+}
+
+.dashboard .section .box .content {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: black;
+  color: grey;
+  text-align: center;
+  padding: 7px;
+  width: 100%; 
+  margin-top: auto; 
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Booking Hotel</title>
+    <link rel="stylesheet" href="css/stylemenu.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="banner">Selamat Datang Di Hotel Kami</h1>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="picture/Andrey Krai.jpg" alt="Profile" height="50" width="50"/>
+        <div class="name">Krai Andrey</div>
+        <div class="date">01/04/2024</div>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="menu.html">Dashboard</a></li>
+          <li><a href="checkin.html">Check In / Out</a></li>
+          <li><a href="roomservice">Room Services</a></li>
+          <li><a href="kamar.html">Kamar</a></li>
+          <li>
+            <a href="layanan.html"> Layanan </a>
+            <ul class="submenu">
+              <li><a href="layananlih.html"> Lihat Layanan </a></li>
+              <li><a href="tamlayanan.html"> Tambah Layanan </a></li>
+              <li><a href="kat.html"> Kategori Layanan </a></li>
+            </ul>
+          </li>
+          <li><a href="#">Buku Tamu</a></li>
+          <li><a href="#">User Manager</a></li>
+          <li><a href="#">Laporan</a></li>
+          <li><a href="#">Perusahaan</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="dashboard">
+        <div class="card blue">
+          <div class="number">2</div>
+          <div class="label">Kamar Tersedia</div>
+          <a class="link" href="#">Lihat Selengkapnya</a>
+        </div>
+        <div class="card red">
+          <div class="number">0</div>
+          <div class="label">Kamar Terpakai</div>
+          <a class="link" href="#">Lihat Selengkapnya</a>
+        </div>
+        <div class="card green">
+          <div class="number">2</div>
+          <div class="label">Kamar VIP</div>
+          <a class="link" href="#">Lihat Selengkapnya</a>
+        </div>
+        <div class="card orange">
+          <div class="number">0</div>
+          <div class="label">Kamar Kotor</div>
+          <a class="link" href="#">Lihat Selengkapnya</a>
+        </div>
+
+        <section class="section">
+          <article class="box orange">
+            <h2 class="title">Tamu yang sedang menginap</h2>
+            <p class="content">
+              Mohon maaf<br />Untuk sementara tidak ada tamu yang sedang
+              menginap di hotel.
+            </p>
+          </article>
+          <article class="box">
+            <h2 class="title">Berita / Pengumuman Internal</h2>
+            <div class="content">
+              <p>
+                Informasi Hotel <span style="color: gold">Ternyaman</span
+                ><br />Oleh: Krai Andrey
+              </p>
+              <p style="margin-top: 10px">Tamu yang akan check-out hari ini</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright ©Kray Andrey &#169; 2024</p>
+    </footer>
+
+    <script>
+      function logout() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100%; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.header {
+  background-color: black;
+  color: grey;
+  padding: 1px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.banner {
+  flex: 1;
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: grey;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 60px;
+}
+
+.sidebar .profile {
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar .profile img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.sidebar .profile .name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebar .profile .date {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  background-color: grey;
+  border: solid white;
+}
+.sidebar .menu li {
+  padding: 10px 20px;
+}
+
+.sidebar .menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.sidebar .menu .submenu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #495057;
+}
+
+.sidebar .menu .submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+.sidebar .menu li:hover .submenu {
+  display: block; /* Tampilan submenu saat hover */
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+.checkin-out {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkin-out h2 {
+  margin-bottom: 15px;
+}
+
+.checkin-out form {
+  margin-bottom: 30px;
+}
+
+.checkin-out label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkin-out input[type="text"],
+.checkin-out input[type="number"],
+.checkin-out input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkin-out button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkin-out button:hover {
+  background-color: #4cae4c;
+}
+
+.checkin-out table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.checkin-out th,
+.checkin-out td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.checkin-out th {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: black;
+  color: grey;
+  text-align: center;
+  padding: 7px;
+  width: 100%; 
+  margin-top: auto;
+}

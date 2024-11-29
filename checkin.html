@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check In / Out Hotel</title>
+    <link rel="stylesheet" href="css/checkin.css" />
+</head>
+<body>
+    <header class="header">
+        <h1 class="banner">Check In / Out Hotel</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="picture/Andrey Krai.jpg" alt="Profile" height="50" width="50" />
+            <div class="name">Krai Andrey</div>
+            <div class="date">01/04/2024</div>
+        </div>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="menu.html">Dashboard</a></li>
+                <li><a href="checkin.html">Check In / Out</a></li>
+                <li><a href="roomservice.html">Room Services</a></li>
+                <li><a href="kamar.html">Kamar</a></li>
+                <li>
+                    <a href="layanan.html"> Layanan </a>
+                    <ul class="submenu">
+                        <li><a href="layananlih.html"> Lihat Layanan </a></li>
+                        <li><a href="tamlayanan.html"> Tambah Layanan </a></li>
+                        <li><a href="kat.html"> Kategori Layanan </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Buku Tamu</a></li>
+                <li><a href="#">User Manager</a></li>
+                <li><a href="#">Laporan</a></li>
+                <li><a href="#">Perusahaan</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section class="checkin-out">
+            <h2>Check In</h2>
+            <form id="checkin-form">
+                <label for="name">Nama Tamu:</label>
+                <input type="text" id="name" placeholder="Krai" required/>
+
+                <label for="room-number">Nomor Kamar:</label>
+                <input type="number" id="room-number" placeholder="01" required />
+
+                <label for="checkin-date">Tanggal Check In:</label>
+                <input type="date" id="checkin-date" required />
+
+                <button type="submit">Check In</button>
+            </form>
+
+            <h2>Check Out</h2>
+            <form id="checkout-form">
+                <label for="checkout-room">Nomor Kamar:</label>
+                <input type="number" id="checkout-room" required />
+
+                <button type="submit">Check Out</button>
+            </form>
+
+            <h2>Tamu yang Sedang Menginap</h2>
+            <table id="checkin">
+                <thead>
+                    <tr>
+                        <th>Nama Tamu</th>
+                        <th>Nomor Kamar</th>
+                        <th>Tanggal Check In</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zenn</td>
+                        <td>101</td>
+                        <td>01/04/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Elizabeth</td>
+                        <td>102</td>
+                        <td>11/05/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Tamu yang Telah Check Out</h2>
+            <table id="checkout">
+                <thead>
+                    <tr>
+                        <th>Nama Tamu</th>
+                        <th>Nomor Kamar</th>
+                        <th>Tanggal Check Out</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miku</td>
+                        <td>02</td>
+                        <td>22/02/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright ©Kray Andrey &#169; 2024</p>
+    </footer>
+
+    <script src="js/checkin.js"> </script>
+  </body>
+</html>
